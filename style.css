@@ -231,6 +231,12 @@ h2 {
   margin-top: 30px;
 }
 
+.video-container iframe{
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
+}
+
 .section-top {
   height: 100vh;
   backdrop-filter: blur(5px);
