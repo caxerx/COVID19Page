@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 | More Information</title>
+    <script src="script.js"></script>
+</head>
+
+<body id="more-info">
+    <div class="nav-menu">
+        <input type='checkbox' id="menu-toggle">
+        <label for="menu-toggle" id="menu-toggle-label"><img src="img/menu.svg" width="16" height="16"></label>
+        <div class="logo">
+            COVID-19
+        </div>
+        <ul>
+            <li class="menu-item">
+                <a href="index.html">Introduction</a>
+            </li>
+            <li class="menu-item">
+                <a href="how-to-prevent.html">How To Prevent</a>
+            </li>
+            <li class="menu-item">
+                <a href="more-info.html">More Information</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section section-top">
+        <h2>More Information About COVID-19</h2>
+        <div class="paragraph-container">
+            <p>
+                To get more information about COVID-19, there are some websites you can check.
+            </p>
+        </div>
+    </div>
+
+    <div class="section section-3">
+        <h2>COVID-19 Page on Google News</h2>
+        <h3><a href="https://news.google.com/covid19">https://news.google.com/covid19</a></h3>
+        <div class="paragraph-container">
+            <p>
+                Provide news of COVID-19 based on your location.
+            </p>
+        </div>
+    </div>
+
+    <div class="section section-4">
+        <h2>Coronavirus Dashboard</h2>
+        <h3><a href="https://ncov2019.live/">https://ncov2019.live/</a></h3>
+        <div class="paragraph-container">
+            <p>
+                Provide realtime statistics of COVID-19 on different country.
+            </p>
+        </div>
+    </div>
+
+    <div class="section section-5">
+        <h2>Subscribe</h2>
+        <div class="paragraph-container">
+            <p>
+                You can also subscribe the news of COVID-19. When there are important news about COVID-19, you will
+                receive about the news.
+            </p>
+        </div>
+        <div>
+            <form onsubmit="useremail.value=email.value; return submitForm();">
+                <div>
+                    <div class="form-row">
+                        <div class="form-label">
+                            <span>Email</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Subscribe"></input>
+                    </div>
+                </div>
+                <div id="subscribe-successful-dialog">
+                    <div class="card">
+                        <h3>Subscribe Successfully</h3>
+                        <p>
+                            A email will send to&nbsp;<output for="email" name="useremail"></output>&nbsp;when there are
+                            important news.
+                        </p>
+                        <div class="card-container">
+                            <div class="big-btn" onclick="confirmSubmit()">OK</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
